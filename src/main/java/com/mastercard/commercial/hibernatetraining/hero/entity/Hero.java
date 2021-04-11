@@ -13,6 +13,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import java.util.List;
 
+@Entity
+@Table
 public class Hero extends BaseEntity {
 
     //private Team team;
@@ -21,6 +23,7 @@ public class Hero extends BaseEntity {
 
     //private User user;
 
+    @Column
     private String fullName;
 
     public String getFullName() {

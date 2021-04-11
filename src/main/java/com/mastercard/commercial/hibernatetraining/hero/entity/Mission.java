@@ -10,13 +10,17 @@ import javax.persistence.TemporalType;
 import java.util.Date;
 import java.util.List;
 
-
+@Entity
+@Table
 public class Mission extends BaseEntity {
 
     //private List<Hero> heroList;
 
+    @Column
     private String name;
 
+    @Column
+    @Temporal(TemporalType.DATE)
     private Date created;
 
     public String getName() {
