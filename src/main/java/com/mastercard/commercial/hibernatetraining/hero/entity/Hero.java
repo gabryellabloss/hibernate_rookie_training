@@ -13,9 +13,6 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import java.util.List;
 
-/**
- * Created by e068636 on 10/29/2019.
- */
 public class Hero extends BaseEntity {
 
     //private Team team;

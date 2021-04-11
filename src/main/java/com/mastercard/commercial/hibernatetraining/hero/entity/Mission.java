@@ -10,9 +10,7 @@ import javax.persistence.TemporalType;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by e068636 on 10/29/2019.
- */
+
 public class Mission extends BaseEntity {
 
     //private List<Hero> heroList;

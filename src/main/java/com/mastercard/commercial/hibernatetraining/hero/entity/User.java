@@ -9,9 +9,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import java.util.Date;
 
-/**
- * Created by e068636 on 10/30/2019.
- */
 public class User extends BaseEntity {
 
     //private Hero hero;

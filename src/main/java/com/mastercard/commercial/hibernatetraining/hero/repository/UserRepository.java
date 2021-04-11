@@ -8,9 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
-/**
- * Created by e068636 on 11/4/2019.
- */
+
 @Repository
 @Transactional
 public class UserRepository {

@@ -96,7 +96,7 @@ public class HibernateTrainingApplication  implements ApplicationRunner {
 		// EXERCISE 10
 		// get the heroes of an specific mission
 
-		System.exit(0);
+		//System.exit(0);
 	}
 
 }
