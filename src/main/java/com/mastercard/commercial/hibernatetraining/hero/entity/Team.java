@@ -12,4 +12,12 @@ public class Team extends BaseEntity {
     //private List<Hero> heroList;
 
     private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

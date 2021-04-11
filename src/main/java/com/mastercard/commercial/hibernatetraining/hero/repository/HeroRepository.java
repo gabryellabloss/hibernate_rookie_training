@@ -16,11 +16,12 @@ public class HeroRepository {
     EntityManager entityManager;
 
     public Hero persist(Hero hero) {
-        return null;
+        entityManager.persist(hero);
+        return hero;
     }
 
     public Hero merge(Hero hero) {
-        return null;
+        return entityManager.merge(hero);
     }
 
     public List<Hero> findAll() {

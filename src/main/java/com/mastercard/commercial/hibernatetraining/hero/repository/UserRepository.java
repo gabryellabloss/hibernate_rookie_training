@@ -17,7 +17,8 @@ public class UserRepository {
     private EntityManager entityManager;
 
     public User persist(User user) {
-        return null;
+        entityManager.persist(user);
+        return user;
     }
 
     public List<User> findAll() {
