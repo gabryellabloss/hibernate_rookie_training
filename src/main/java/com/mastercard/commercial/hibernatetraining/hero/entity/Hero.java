@@ -16,8 +16,9 @@ import java.util.List;
 @Entity
 @Table
 public class Hero extends BaseEntity {
-
-    //private Team team;
+    @ManyToOne
+    @JoinColumn(name = "team_id")
+    private Team team;
 
     //private List<Mission> missionList;
 
@@ -32,5 +33,13 @@ public class Hero extends BaseEntity {
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
+    }
+
+    public Team getTeam() {
+        return team;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
     }
 }

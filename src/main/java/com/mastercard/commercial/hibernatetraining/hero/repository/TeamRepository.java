@@ -16,7 +16,8 @@ public class TeamRepository {
     EntityManager entityManager;
 
     public Team persist(Team team) {
-        return null;
+        entityManager.persist(team);
+        return team;
     }
 
     public Team merge(Team team) {

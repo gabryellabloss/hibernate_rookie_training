@@ -16,7 +16,8 @@ public class HeroRepository {
     EntityManager entityManager;
 
     public Hero persist(Hero hero) {
-        return null;
+        entityManager.persist(hero);
+        return hero;
     }
 
     public Hero merge(Hero hero) {
@@ -28,7 +29,7 @@ public class HeroRepository {
     }
 
     public Hero findById(Long id) {
-        return null;
+        return entityManager.find(Hero.class, id);
     }
 
     public Hero findByIdHQL(Long id) {

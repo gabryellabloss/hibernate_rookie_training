@@ -17,6 +17,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 
 @SpringBootApplication
 public class HibernateTrainingApplication  implements ApplicationRunner {
@@ -36,65 +37,20 @@ public class HibernateTrainingApplication  implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments applicationArguments) throws Exception {
-		// EXERCISE 1
-		// create new team
+		//Exerciocio 1: Mapeamentos
+		Team team = new Team();
+		team.setName("Vingadores");
+		teamRepository.persist(team);
 
+		//Exercicio 2: Mapear Hero e Team
+		Team team2 = new Team();
+		team.setName("Vingadores");
+		teamRepository.persist(team2);
 
-		// *** *** *** ***
-
-		// EXERCISE 2
-		// create a hero
-
-
-		// *** *** *** ***
-
-		// EXERCISE 3
-		//  associate hero to team
-
-
-		// *** *** *** ***
-
-		// EXERCISE 4
-		// create new mission
-
-		// associate hero with mission
-
-
-		// *** *** *** ***
-
-		// EXERCISE 5
-		// cascade
-
-
-		// *** *** *** ***
-
-		// EXERCISE 6
-		// fetch type
-		// spring.jpa.show-sql=true
-
-
-		// *** *** *** ***
-
-		// EXERCISE 7
-		// HQL
-
-		// find all heroes
-
-
-		// *** *** *** ***
-
-		// EXERCISE 8
-		// find hero by ID
-
-		// *** *** *** ***
-
-		// EXERCISE 9
-		// find hero by initial name
-
-		// *** *** *** ***
-
-		// EXERCISE 10
-		// get the heroes of an specific mission
+		Hero hero = new Hero();
+		hero.setFullName("Thor");
+		hero.setTeam(team2);
+		heroRepository.persist(hero);
 
 		//System.exit(0);
 	}
